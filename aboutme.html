@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-me {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about-me h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about-me p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            max-width: 300px;
+            margin: 0 auto 20px auto;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-icons {
+            margin-top: 20px;
+        }
+        .contact-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .contact-icons a:hover {
+            color: #007bff;
+        }
+        .contact-icons a::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .contact-icons a:hover::after {
+            opacity: 1;
+        }
+        .back-to-portfolio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto mt-16">
+        <header class="bg-white p-6 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="text-blue-500 mx-3 hover:text-blue-700 transition duration-300">Back to Portfolio</a>
+            </div>
+        </header>
+
+        <div class="about-me">
+            <h2 class="text-center">About me</h2>
+            <img src="/home/hammer/Desktop/Bachelor portfolio/assets/about.png" alt="Your Image">
+            <p>
+                I am a dedicated team player with a keen aptitude for analytical thinking and problem-solving. Having lived in various countries, including the UAE and Malaysia, I have developed a strong interest in computers and technology from a young age.
+            </p>
+            <p>
+                After completing my bachelor's degree in Information Technology at Limkokwing University Of Creative Technology, I gained valuable experience working in the IT and transport sectors. Currently, I am at Thomas More University obtaining my degree focusing on Computer Science with an emphasis on Artificial Intelligence.
+            </p>
+            <p>
+                I thrive on continuous learning and easily adapt to new environments, thanks to my diverse background. Always eager to improve and advance in my field, I aspire to achieve significant accomplishments in the future.
+            </p>
+            <div class="contact-icons flex justify-center">
+                <a href="assets/CV.pdf" target="_blank" data-title="CV"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.linkedin.com/in/soufiane-kissami-62b445149/" target="_blank" data-title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sofiankissami@icloud.com" data-title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <footer class="bg-white p-6 mt-16 shadow-lg">
+            <div class="container mx-auto text-center text-gray-600">
+                &copy; 2024 Soufiane Kissami. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

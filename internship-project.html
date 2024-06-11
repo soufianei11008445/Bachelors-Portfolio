@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Project: Real-Time Augmented Reality Overlay</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-mrK25uEYx9Nc2hvcT0jiN3Y/YbNdGrnD8t+hLv5vNEaP1mFKyaxvcprXEowG7fgV" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f7fafc;
+            color: #2d3748;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-summary {
+            margin-top: 2rem;
+        }
+        .project-summary h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            
+        }
+        .project-summary h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #4299e1;
+        }
+        .project-summary p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .project-summary img, .project-summary video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .flex-row img {
+            width: 49%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #edf2f7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+        .keyword-definition {
+            margin-top: 20px;
+            background-color: #e2e8f0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .keyword-definition p {
+            font-size: 1rem;
+        }
+        /* Document Links Section */
+        .document-links {
+            margin-top: 30px;
+        }
+        .document-links a {
+            display: block;
+            padding: 15px;
+            background-color: #4299e1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .document-links a:hover {
+            background-color: #2c5282;
+        }
+        .document-links a i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+   <!-- Header -->
+<header class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <nav>
+            <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+            <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+            <!-- Replace the existing "Projects" link with the modified link -->
+            <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+            <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg project-summary">
+        <h1 class="text-4xl font-bold mb-6 text-blue-600">Real-Time Augmented Reality Overlay for Advanced Data Visualization</h1>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            During my internship, I executed a project to develop an Augmented-Reality system that dynamically visualizes measurement data results in an overlaid color-map spectrum image. Here’s an overview consisting of the demonstration video, development process, technical implementations, and results achieved.
+        </p>
+        
+        <!-- Video section -->
+<video controls class="mb-6">
+    <!-- Update the source to the Google Drive link -->
+    <source src="https://drive.google.com/uc?export=download&id=1sot4NyGIwsWzjvnbVXLioX68HWUUh7oz" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+        <h2 class="text-2xl font-bold mb-4">Initial Setup and Integration:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            I established connectivity between a high-end SICK camera and the Harvester library to capture live video feed. Using OpenCV, I displayed this feed, ensuring seamless integration with the existing framework. Functionality was demonstrated through code snippets and screenshots.
+        </p>
+        <img src="assets/sick.png" alt="SICK Camera Setup">
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>SICK Camera Sensor:</strong> SICK camera sensors are high-quality cameras used in industrial settings. They are designed for precise tasks such as inspecting products, measuring objects, and recognizing items in automated systems, ensuring high accuracy and reliability.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4">ArUco Marker Detection and Offsetting:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            I implemented robust ArUco marker detection using OpenCV for edge detection of the material. This included applying offsets to marker positions for enhanced accuracy and precision, validated through code snippets and visual representations.
+        </p>
+        <img src="assets/aruco.png" alt="ArUco Marker Detection">
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>ArUco Markers:</strong> ArUco markers are special square patterns that help cameras recognize and track objects. Each marker has a unique ID, making them useful for applications like augmented reality, robot navigation, and object tracking. In my case, I use the ArucoMArkers to detect the edges of the material we are testing.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4">Homography Transformation and AR Coordinates:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            Homography transformation
+        </p>
+        <div class="flex flex-row justify-between mb-6">
+            <img src="assets/homography1.png" alt="Homography Transformation 1">
+            <img src="assets/homography2.png" alt="Homography Transformation 2">
+        </div>
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>Homography:</strong> Homography is a technique in computer vision that transforms the perspective of an image. It is used to correct distortions and align images taken from different viewpoints, which is essential for tasks like image stitching and augmented reality.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4">Colormap Image Generation and Offsetting ArUco Marker’s Positions:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            Using Matplotlib and Pandas, I generated colormap images based on basis weight measurement data and overlaid them onto the live feed for real-time visualization. This process was illustrated with code snippets and demonstrations.
+        </p>
+        <img src="assets/colormap.png" alt="Colormap Image">
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>Matplotlib:</strong> Matplotlib is a Python library used for creating visualizations, such as plots and charts, to represent data in a graphical format.</p>
+        </div>
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>Pandas:</strong> Pandas is a Python library used for data manipulation and analysis. It provides data structures and functions to work with structured data, such as tables, making it easier to clean, transform, and analyze data sets.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4">Continuous Monitoring of CSV File:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            I implemented a system for real-time monitoring of a CSV file, which is continuously updated by the OptiMIS system. The data from this file was used to generate dynamic colormap images that were overlaid onto the live feed for real-time visualization.
+        </p>
+        <img src="assets/monitor.png" alt="Monitoring CSV File">
+        <div class="keyword-definition">
+            <p class="text-gray-600"><strong>Continuous Monitoring of CSV File:</strong> Involves automatically checking the file for new data entries and updating the system in real-time. This ensures that the latest data is always available for processing and analysis without manual updates.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-4">Conclusion and Further Steps:</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            The project was successfully completed, demonstrating the potential of AR in enhancing data visualization and process optimization. Future steps include refining the AR overlay accuracy and expanding the system’s capabilities for broader industrial applications.
+        </p>
+
+        <!-- Document Links Section -->
+        <section class="container mx-auto p-8 shadow-md rounded-lg document-links">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Internship Documents:</h2>
+            <a href="assets/Project.pdf" target="_blank" class="text-gray-700 text-lg leading-relaxed mb-2 flex items-center">
+                <i class="fas fa-file-pdf mr-2"></i> Project Plan Document
+            </a>
+            <a href="assets/Evidence.pdf" target="_blank" class="text-gray-700 text-lg leading-relaxed mb-2 flex items-center">
+                <i class="fas fa-file-pdf mr-2"></i> Evidence of Realization Document
+            </a>
+            <a href="assets/reflection.pdf" target="_blank" class="text-gray-700 text-lg leading-relaxed mb-2 flex items-center">
+                <i class="fas fa-file-pdf mr-2"></i> Reflection Document
+            </a>
+        </section>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-white p-6 mt-16 shadow-lg text-blue-600">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Soufiane Kissami. All rights reserved.
+        </div>
+    </footer>    
+</body>
+</html>

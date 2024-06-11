@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roses Image-Classification Using Different Models Project Summary</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fafc;
+            color: #4299e1;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #edf2f7;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .project-summary img {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+      <!-- Header -->
+<header class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <nav>
+            <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+            <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+            <!-- Replace the existing "Projects" link with the modified link -->
+            <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+            <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg project-summary">
+        <h1 class="text-4xl font-bold mb-6 text-blue-600">Roses Image-Classification Using Different Models Project Summary</h1>
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Introduction</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            This project classifies roses into seven categories using several trained models, with the best one deployed in a Streamlit app.
+        </p>
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Goals</h2>
+        <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed mb-6">
+            <li>Collect and Label Data: Labeled 1,134 images from seven rose types.</li>
+            <li>Train FASTAI Models:
+                <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+                    <li>Simple Model: Used ResNet50, fine-tuned for three epochs.</li>
+                    <li>AlexNet Model: Trained for 5 and 10 epochs, better performance at 10 epochs.</li>
+                    <li>VGG Model: Trained for 5 and 10 epochs, VGG16 had the lowest error rate.</li>
+                    <li>ResNet50: Optimized using learning rate finder and "fit_one_cycle", improved with FP16 training.</li>
+                </ul>
+            </li>
+            <li>Train Keras Models (Extra):
+                <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+                    <li>Simple CNN Model: Accuracy improved from 0.29 (10 epochs) to 0.39 (20 epochs).</li>
+                    <li>MobileNetV2 Model: Best Keras model, but not as good as the optimized Fastai models.</li>
+                </ul>
+            </li>
+            <li>Deploy on Streamlit: Created an app for rose classification.</li>
+        </ul>
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Conclusion</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            The project successfully found the best model for classifying roses. Highlights include effective data labeling and augmentation, training various models, with VGG16 performing the best, and deploying the model in a user-friendly Streamlit app.
+        </p>
+        <div class="flex justify-center space-x-4">
+            <img src="/home/hammer/Desktop/Bachelor portfolio/assets/roses1.png" alt="Roses Image 1" class="w-1/2 h-auto">
+            <img src="/home/hammer/Desktop/Bachelor portfolio/assets/roses2.png" alt="Roses Image 2" class="w-1/2 h-auto">
+        </div>
+    </section>
+
+    <footer class="bg-white p-6 mt-16 shadow-lg text-blue-600">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Soufiane Kissami. All rights reserved.
+        </div>
+    </footer>    
+</body>
+</html>

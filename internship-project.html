@@ -37,11 +37,23 @@
             font-size: 1.2rem;
             margin-bottom: 20px;
         }
-        .project-summary img, .project-summary video {
+        .project-summary img, .project-summary iframe {
             width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            width: 80%;
+            height: 450px;
+            border-radius: 8px;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         }
         .flex-row img {
@@ -111,8 +123,8 @@
         </p>
 
         <!-- Video section -->
-        <div class="mb-6">
-            <iframe src="https://drive.google.com/file/d/1sot4NyGIwsWzjvnbVXLioX68HWUUh7oz/preview" width="640" height="480" allow="autoplay"></iframe>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1sot4NyGIwsWzjvnbVXLioX68HWUUh7oz/preview" allow="autoplay"></iframe>
         </div>
 
         <h2 class="text-2xl font-bold mb-4">Initial Setup and Integration:</h2>
@@ -154,7 +166,7 @@
             <p class="text-gray-600"><strong>Matplotlib:</strong> Matplotlib is a Python library used for creating visualizations, such as plots and charts, to represent data in a graphical format.</p>
         </div>
         <div class="keyword-definition">
-            <p class="text-gray-600"><strong>Pandas:</strong> Pandas is a Python library used for data manipulation and analysis. It provides data structures and functions to work with structured data, such as tables, making it easier to clean, transform, and analyze data sets.</p>
+            <p class="text-gray-600"><strong>Pandas:</strong> Pandas is a Python library used for data manipulation and analysis. It provides data structures and functions needed to work seamlessly with structured data, such as tables, making it easier to clean, transform, and analyze data sets.</p>
         </div>
 
         <h2 class="text-2xl font-bold mb-4">Continuous Monitoring of CSV File:</h2>

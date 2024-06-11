@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor's Portfolio: Website Creation And Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fafc;
+            color: #2d3748;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .blue-text {
+            color: #4299e1;
+        }
+        .project-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .project-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .technology-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .technology-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h3, h4 {
+            margin-top: 1.5rem;
+        }
+        p, ul {
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Header -->
+<header class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <nav>
+            <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+            <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+            <!-- Replace the existing "Projects" link with the modified link -->
+            <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+            <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Content Section -->
+    <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg">
+        <h2 class="text-4xl font-bold mb-6 text-blue-600">Bachelor's Portfolio: Website Creation And Design</h2>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">Objective</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            To create a professional portfolio website that showcases various projects and achievements using HTML, Tailwind CSS, and JavaScript.
+        </p>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">1. Project Overview</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            The portfolio website is designed to present my work, skills, and experiences in a structured and visually appealing manner. It includes sections for a brief introduction, detailed project descriptions, and links to additional information about the Internship Project/About me.
+        </p>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">2. Technologies Used</h3>
+        <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+            <li><strong>HTML:</strong> For structuring the content of the web pages.</li>
+            <li><strong>Tailwind CSS:</strong> For styling the website with a focus on modern and responsive design.</li>
+            <li><strong>JavaScript:</strong> For any interactive elements and functionality enhancements.</li>
+        </ul>
+        <div class="technology-image">
+            <img src="/home/hammer/Desktop/Bachelor portfolio/assets/portfolio.png" alt="Portfolio Screenshot">
+        </div>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">3. Website Structure</h3>
+        <h4 class="text-2xl font-semibold mb-2 blue-text">Header:</h4>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            Contains a navigation bar with links to Home, About Me, Projects, and The Internship sections. Tailwind CSS is used for styling and ensuring a responsive design.
+        </p>
+
+        <h4 class="text-2xl font-semibold mb-2 blue-text">Home Section:</h4>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            A hero section with a background image and an overlay. Includes a welcoming message and a brief introduction.
+        </p>
+
+        <h4 class="text-2xl font-semibold mb-2 blue-text">Projects Section:</h4>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            Displays individual project cards with images, titles, and descriptions. Projects showcased include:
+        </p>
+        <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+            <li><strong>Yellow-Legged-Hornets vs Bees:</strong> Objective: Detect and track Yellow-Legged Hornets and Bees using AI.</li>
+            <li><strong>Roses Image-Classification Using Different AI Models:</strong> Objective: Classify and identify roses by training and selecting the optimal model.</li>
+            <li><strong>Elderly Monitoring System:</strong> Objective: Develop a system for people counting, dependent tracking, and fall detection.</li>
+            <li><strong>The Internship Project: Real-Time Augmented Reality Overlay for Advanced Data Visualization:</strong> Objective: Display and visualize data using augmented reality.</li>
+            <li><strong>Bachelor's Portfolio: Website Creation And Design:</strong> Objective: Create a portfolio using HTML, Tailwind CSS, and JavaScript.</li>
+        </ul>
+
+        <h4 class="text-2xl font-semibold mb-2 blue-text">Footer:</h4>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            Contains copyright information and ensures consistent design across all pages.
+        </p>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">4. Key Features</h3>
+        <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+            <li><strong>Responsive Design:</strong> Ensures the website is accessible and visually appealing on various devices and screen sizes.</li>
+            <li><strong>Interactive Elements:</strong> Hover effects on project cards for a dynamic user experience.</li>
+        </ul>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">5. Challenges and Solutions</h3>
+        <ul class="list-disc list-inside text-gray-700 text-lg leading-relaxed">
+            <li><strong>Challenge:</strong> Ensuring responsive design across different devices. <strong>Solution:</strong> Utilized Tailwind CSS's utility-first classes to create a mobile-first design.</li>
+            <li><strong>Challenge:</strong> Integrating various projects and ensuring consistency in design and functionality. <strong>Solution:</strong> Structured the project cards uniformly and applied consistent styling rules.</li>
+        </ul>
+
+        <h3 class="text-3xl font-bold mb-4 blue-text">6. Conclusion</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+            This project demonstrates my ability to design and develop a professional portfolio website that effectively showcases my skills and projects. The use of HTML, Tailwind CSS, and JavaScript provided a robust framework for creating a responsive, visually appealing, and functional website.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white p-6 mt-16 shadow-lg text-blue-600">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Soufiane Kissami. All rights reserved.
+        </div>
+    </footer>    
+</body>
+</html>

@@ -55,21 +55,34 @@
         ul {
             padding-left: 1.5rem;
         }
+        header {
+            background-color: #edf2f7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-weight: 500;
+            color: #2d3748;
+        }
+        nav a:hover {
+            color: #4a5568;
+        }
     </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Header -->
-<header class="p-6">
-    <div class="container mx-auto flex justify-between items-center">
-        <nav>
-            <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
-            <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
-            <!-- Replace the existing "Projects" link with the modified link -->
-            <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
-            <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
-        </nav>
-    </div>
-</header>
+    <header class="p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav>
+                <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+                <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+                <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+                <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Content Section -->
     <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg">
@@ -149,3 +162,4 @@
     </footer>    
 </body>
 </html>
+

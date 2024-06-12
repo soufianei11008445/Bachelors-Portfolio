@@ -12,7 +12,7 @@
             font-family: Arial, sans-serif;
         }
         .container {
-            background-color: #edf2f7;
+            background-color: #ffffff;
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
@@ -33,26 +33,33 @@
         nav a {
             font-weight: 500;
             color: #2d3748;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
         }
         nav a:hover {
-            color: #4a5568;
+            background-color: #4299e1;
+            color: #ffffff;
         }
     </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Header -->
     <header class="p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <nav>
-                <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
-                <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
-                <!-- Replace the existing "Projects" link with the modified link -->
-                <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
-                <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
-            </nav>
+        <div class="container mx-auto">
+            <div class="nav-container">
+                <nav class="nav-links">
+                    <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+                    <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+                    <!-- Replace the existing "Projects" link with the modified link -->
+                    <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+                    <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+                </nav>
+            </div>
         </div>
     </header>
 
+    <!-- Content Section -->
     <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg project-summary">
         <h1 class="text-4xl font-bold mb-6 text-blue-600">Roses Image-Classification Using Different Models Project Summary</h1>
         <h2 class="text-2xl font-bold mb-4 text-blue-600">Introduction</h2>

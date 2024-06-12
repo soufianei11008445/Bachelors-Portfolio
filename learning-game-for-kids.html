@@ -9,12 +9,14 @@
         body {
             background-color: #f7fafc;
             color: #2d3748;
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
             font-size: 2rem;
@@ -37,13 +39,15 @@
             color: #4a5568;
         }
         .image-container {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-bottom: 30px;
         }
         .image-container img {
-            max-width: 300%; /* Increase image size */
+            max-width: 100%;
             height: auto;
-            margin: 0 auto; /* Center the image horizontally */
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         }
         .functionality {
             margin-bottom: 30px;
@@ -57,24 +61,40 @@
         .functionality p {
             margin-bottom: 10px;
         }
+        /* Sticky Header */
+        header {
+            background-color: #edf2f7;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            font-weight: 500;
+            color: #2d3748;
+        }
+        nav a:hover {
+            color: #4a5568;
+        }
     </style>
 </head>
-<body>
+<body class="font-sans antialiased">
     <!-- Header -->
-<header class="p-6">
-    <div class="container mx-auto flex justify-between items-center">
-        <nav>
-            <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
-            <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
-            <!-- Replace the existing "Projects" link with the modified link -->
-            <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
-            <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
-        </nav>
-    </div>
-</header>
+    <header class="p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav>
+                <a href="index.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Home</a>
+                <a href="index.html#aboutme" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">About Me</a>
+                <!-- Replace the existing "Projects" link with the modified link -->
+                <a href="index.html#projects" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">Projects</a>
+                <a href="internship-project.html" class="mx-3 text-blue-600 hover:text-blue-800 transition duration-300">The Internship</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="container">
-        <h1>Learning Game for Kids: Spelling Adventure (2016)</h1>
+    <!-- Content Section -->
+    <section class="container mx-auto mt-16 p-8 shadow-md rounded-lg">
+        <h1>Learning Game for Kids: Spelling Adventure</h1>
 
         <section class="introduction">
             <h2>Introduction</h2>
@@ -147,10 +167,6 @@
                 </div>
             </div>
 
-            <div class="functionality-item">
-                <h3>Credit Dialog</h3>
-                <p>The credit dialog acknowledges the contributions of the application's programmers, providing recognition for their efforts and expertise.</p>
-            </div>
         </section>
 
         <section class="conclusion">
@@ -159,12 +175,15 @@
                 In developing Spelling Master, our primary goal was to create an educational application that seamlessly blends entertainment with learning for children. By engaging in spelling challenges and interactive gameplay, kids can enhance their spelling proficiency while enjoying a fun-filled gaming experience. Spelling Master exemplifies our commitment to leveraging technology for educational purposes and promoting continuous learning and skill development among young learners.
             </p>
         </section>
-    </div>
+    </section>
 
-    <footer class="bg-white p-6 mt-16 shadow-lg">
-        <div class="container mx-auto text-center text-blue-600">
+    <!-- Footer -->
+    <footer class="bg-white p-6 mt-16 shadow-lg text-blue-600">
+        <div class="container mx-auto text-center">
             &copy; 2024 Soufiane Kissami. All rights reserved.
         </div>
     </footer>
 </body>
 </html>
+
+

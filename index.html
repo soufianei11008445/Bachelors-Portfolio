@@ -72,9 +72,12 @@
             width: 60px;
             height: auto;
         }
-        header, footer {
+        header {
             background-color: #edf2f7;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures it is above other elements */
         }
         nav a {
             font-weight: 500;
@@ -111,7 +114,6 @@
             </p>
         </div>
     </section>
-
 
     <section id="aboutme" class="py-20 bg-gray-100">
         <div class="container mx-auto flex flex-col md:flex-row items-start">
@@ -295,4 +297,5 @@
     <script src="main.js"></script>
 </body>
 </html>
+
 
